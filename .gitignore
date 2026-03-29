@@ -1,0 +1,18 @@
+# Virtual Environment
+venv/
+ENV/
+env/
+
+# Environment Variables
+.env
+
+# Python Cache
+__pycache__/
+*.pyc
+
+# Local Database (Chroma/etc)
+db/
+
+# Project clones/docs
+rag-for-beginners/
+
