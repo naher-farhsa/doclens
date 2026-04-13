@@ -1,0 +1,54 @@
+1.  In simple 2 lines, what problem was the Transformer trying to solve
+    compared to RNNs? Explain like you’re talking to a 10-year-old.
+
+2.  Can you explain “Attention” in your own words using a real-world
+    analogy?
+
+3.  Why is the paper titled “Attention is All You Need”? What does that
+    really mean in simple terms?
+
+4.  Imagine you’re reading a sentence — how does self-attention help you
+    understand context better?
+
+5.  What is the difference between Encoder and Decoder? Explain like a
+    teacher explaining to a beginner.
+
+6.  If you had to explain multi-head attention using a classroom
+    example, how would you do it?
+
+7.  Why do we need positional encoding? Explain with a real-life
+    example.
+
+8.  What happens if we remove positional encoding completely?
+
+9.  Can you explain Query, Key, and Value using a Google search analogy?
+
+10. Why is masking used in the decoder? Explain it like a real-life
+    restriction.
+
+11. What is the role of Feed Forward Network in each layer? Keep it
+    simple.
+
+12. Why do we stack multiple layers in Transformer instead of using just
+    one?
+
+13. Explain residual connections like you’re explaining shortcuts in
+    real life.
+
+14. What is Layer Normalization and why is it useful? Give a simple
+    analogy.
+
+15. How is Transformer faster than RNNs? Explain in 2 simple lines.
+
+16. What does parallelization mean in the context of Transformers?
+
+17. Can you explain how a sentence flows through the Transformer step by
+    step (high level)?
+
+18. What is the intuition behind attention scores?
+
+19. If attention is like “focusing”, what does multi-head attention
+    represent in real life?
+
+20. If you had to explain the entire Transformer in 3 lines to a
+    non-tech person, what would you say?

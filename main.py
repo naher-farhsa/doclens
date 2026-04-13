@@ -34,6 +34,19 @@ AFTER (clean design):
     No magic strings. No sentinel values. Control flow is explicit and readable.
 """
 
+import os
+import sys
+
+# Add Tesseract to system path for unstructured processing
+tesseract_path = r"C:\Program Files\Tesseract-OCR"
+if os.path.exists(tesseract_path) and tesseract_path not in os.environ.get("PATH", ""):
+    os.environ["PATH"] += os.pathsep + tesseract_path
+
+# Force UTF-8 encoding for standard output and error to prevent emoji crashes in Windows Git Bash
+if sys.stdout.encoding.lower() != 'utf-8':
+    sys.stdout.reconfigure(encoding='utf-8')
+    sys.stderr.reconfigure(encoding='utf-8')
+
 import time
 from dotenv import load_dotenv
 from langchain_core.messages import HumanMessage, AIMessage
