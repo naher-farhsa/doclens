@@ -1,0 +1,226 @@
+python main.py
+🔑 KeyManager initialised with 1 key(s).
+
+╔══════════════════════════════════════════════════════════╗
+║            🔍 DocLens – RAG Document Chat Bot            ║
+╚══════════════════════════════════════════════════════════╝
+============================================================
+  📥 DocLens – Ingestion Pipeline
+============================================================
+
+📂 Loading documents from: C:\Users\2460600\VSCode Projects\doclens\documents
+  📄 Loading: AGI_Descriptive_One_Page.pdf
+incorrect startxref pointer(1)
+parsing for Object Streams
+  ✅ Loaded 2 pages from 1 PDF(s)
+
+  📃 Page 1:
+     Source : C:\Users\2460600\VSCode Projects\doclens\documents\AGI_Descriptive_One_Page.pdf
+     Length : 2192 characters
+     Preview: Artificial General Intelligence (AGI): Concise
+ Descriptive Overview
+Overview
+Artificial General Intelligence (AGI) refe...
+
+  📃 Page 2:
+     Source : C:\Users\2460600\VSCode Projects\doclens\documents\AGI_Descriptive_One_Page.pdf
+     Length : 679 characters
+     Preview: values.
+Future Outlook
+In the near term, hybrid AI systems with limited general intelligence are expected to emerge.
+Mid...
+
+✂️  Chunking documents (Semantic Chunking)...
+  ✅ Semantic chunking produced 9 chunks
+
+  --- Chunk 1 (585 chars) ---
+  Artificial General Intelligence (AGI): Concise
+ Descriptive Overview
+Overview
+Artificial General Intelligence (AGI) refers to a class of AI systems ca...
+  Source: C:\Users\2460600\VSCode Projects\doclens\documents\AGI_Descriptive_One_Page.pdf
+
+  --- Chunk 2 (218 chars) ---
+  Artificial
+Superintelligence (ASI) extends this further by surpassing human cognitive capabilities in all
+domains, including creativity and reasoning....
+  Source: C:\Users\2460600\VSCode Projects\doclens\documents\AGI_Descriptive_One_Page.pdf
+
+  --- Chunk 3 (541 chars) ---
+  Symbolic AI focuses on rule-based reasoning, while
+connectionist approaches use neural networks to learn patterns from data. Hybrid architectures that...
+  Source: C:\Users\2460600\VSCode Projects\doclens\documents\AGI_Descriptive_One_Page.pdf
+
+  ... and 6 more chunks
+
+💾 Creating embeddings and storing in ChromaDB (batched)...
+  📥 Storing batch 1/5...
+  ⏳ Safety delay (5s) to prevent quota exhaustion...
+  📥 Storing batch 2/5...
+  ⏳ Safety delay (5s) to prevent quota exhaustion...
+  📥 Storing batch 3/5...
+  ⏳ Safety delay (5s) to prevent quota exhaustion...
+  📥 Storing batch 4/5...
+  ⏳ Safety delay (5s) to prevent quota exhaustion...
+  📥 Storing batch 5/5...
+
+  ✅ Vector store updated at: C:\Users\2460600\VSCode Projects\doclens\db\chroma_db
+     Total vectors: 9
+
+============================================================
+  ✅ Ingestion complete!
+============================================================
+
+📦 Loading vector store (API Key 1)...
+  ✅ Loaded vector store with 9 vectors
+
+🔍 Setting up Hybrid Retriever (Vector + BM25)...
+  ✅ Hybrid Retriever ready (vector 0.7 + BM25 0.3)
+
+🤖 Loading Claude model (claude-sonnet-4-6)...
+
+────────────────────────────────────────────────────────────
+  💬 Chat started! Ask me anything about your documents.
+     Type 'quit' or 'exit' to end the session.
+     Type 'clear' to reset conversation history.
+────────────────────────────────────────────────────────────
+
+🧑 You:
+ Ok My name is Rehan whats your name
+
+ 📋 Planning..  💬 General query detected. Skipping RAG pipeline.
+  🧠 Generating answer...
+🤖 DocLens:
+Hello Rehan! 👋
+
+I'm **DocLens**, an intelligent document analysis assistant. I'm here to help you analyze and extract information from documents.
+
+Feel free to share any documents or ask me questions — I'd love to help! 😊
+
+🧑 You:
+ What knowledge you have
+
+ 📋 Planning..  💬 General query detected. Skipping RAG pipeline.
+  🧠 Generating answer...
+🤖 DocLens:
+Great question, Rehan! 😊
+
+As **DocLens**, here's what I can help you with:
+
+---
+
+## 📚 My Capabilities:
+
+### 🔍 Document Analysis
+- Reading and understanding uploaded documents
+- Extracting key information and insights
+
+### ❓ Question Answering
+- Answering questions **based on document content**
+- Providing accurate, context-based responses
+
+### 📝 Summarization
+- Summarizing long documents into concise points
+
+### 🧠 General Knowledge
+- Answering general questions from my **training knowledge** when no document context is provided
+
+### 📊 Data Interpretation
+- Helping interpret tables, reports, and structured data within documents
+
+---
+
+## ⚠️ My Limitations:
+- I rely primarily on the **documents you provide**
+- I don't browse the internet or access real-time data
+- My training knowledge has a **cutoff date**
+
+---
+
+Feel free to upload a document or ask me anything, **Rehan**! I'm here to help. 😊
+
+🧑 You:
+ Give 4 points on AGI 
+
+ 📋 Planning..  💬 General query detected. Skipping RAG pipeline.
+  🧠 Generating answer...
+🤖 DocLens:
+## 🤖 Artificial General Intelligence (AGI) — 4 Key Points
+
+Since no document context was provided, here's what I know from my **training knowledge**:
+
+---
+
+### 1. 🧠 Definition
+AGI refers to a type of AI that can **understand, learn, and apply intelligence** across a wide range of tasks — just like a human being — rather than being limited to specific tasks like current AI systems.
+
+---
+
+### 2. 📍 Current State
+As of now, **AGI does not yet exist**. Today's AI systems (like ChatGPT, Gemini, etc.) are called **Narrow AI** — they excel at specific tasks but lack general reasoning and adaptability across all domains.
+
+---
+
+### 3. ⚠️ Risks & Concerns
+Many researchers, including **Elon Musk** and **Stephen Hawking**, have warned that AGI could pose **existential risks** to humanity if not developed with proper safety measures and ethical guidelines.
+
+---
+
+### 4. 🚀 Future Potential
+AGI, if achieved, could **revolutionize every field** — from medicine and science to education and economics — by solving complex problems far beyond human capability.
+
+---
+
+> ⚠️ **Note:** No document was provided for this query. This answer is based on my **general training knowledge**.        
+
+Let me know if you'd like to dive deeper, **Rehan**! 😊
+
+🧑 You:
+ Market growth
+
+ 📋 Planning..  🔄 Rewritten query: What is the market growth related to AGI or artificial intelligence?
+  📥 Retrieving...
+🔎 Batch retrieving for 1 queries...
+  🔍 Query 1/1: What is the market growth related to AGI or artificial intelligence?
+  ✅ Batch retrieval complete: 4 unique chunks found.
+  📚 Found 4 relevant chunk(s)
+  🧠 Generating answer...  ✂️  Capping context: 4 chunks → 3
+
+🤖 DocLens:
+## 📈 AGI Market Growth
+
+Based on the provided documents, here are the key insights on AGI market growth:
+
+---
+
+### 1. 💰 Current Market Value
+- The AGI market was valued at approximately **$2.74 billion in 2023**
+
+---
+
+### 2. 🚀 Projected Growth
+- Expected to expand to **over $50 billion by 2032**
+- Representing a massive **~18x increase** in under a decade
+
+---
+
+### 3. 📊 Growth Rate
+- The market is growing at a **Compound Annual Growth Rate (CAGR) of ~36.9%**, indicating extremely rapid expansion       
+
+---
+
+### 4. 🏦 Leading Sector
+- The **financial sector** is expected to be the **leading adopter** of AGI, driven by:
+  - Its **data-intensive nature**
+  - High demand for **predictive analytics**
+
+---
+
+### 5. 🌍 Broader Impact
+- AGI is described as both a **disruptive force** and a **powerful enabler**, representing a **paradigm shift** in artificial intelligence *(Document 2)*
+
+---
+
+> ✅ *This answer is fully based on the provided document context.*
+
+🧑 You:
